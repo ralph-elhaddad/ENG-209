@@ -14,11 +14,21 @@ class Polynomial{
 	void newcoef(double a);
 	void newcoef(double a, size_t i);
 	void set_degre(size_t i);
-	
+	void verif_degre();
 	private:
 	size_t degre;
 	vector<double> coeff;
 	};
+
+void Polynomial::verif_degre(){
+	size_t a(degre);
+	for(size_t i(0) ; i<a; ++i){
+		if (coeff[degre] == 0){
+			coeff.pop_back();
+			degre = coeff.size() - 1;
+		}
+	}
+}
 
 void Polynomial::newcoef(double a) {
 	coeff.push_back(a);
@@ -69,38 +79,47 @@ Polynomial operator*(Polynomial p1, Polynomial p2) {
 }
 
 ostream& operator<<(ostream& sortie, Polynomial& p){
+	p.verif_degre();
 	sortie << "Le polynome de degre " << p.get_degre() << " est : ";
-	size_t i(p.get_degre());
+	
+	size_t i(p.get_degre()); 
 	do{
 		if (i>1) sortie << p.get_coeff(i) << "*x^" << i << " + ";
-		else if (i==1) sortie << " + "<< p.get_coeff(i) << "*x";
-		else if (i==0) sortie << p.get_coeff(i);
 		if (i!=0) --i;
 	}while(i != 0);
-	if (p.get_degre() != 0) sortie << " + " << p.get_coeff(0);
+	
+	if (p.get_degre() > 1) sortie << " + "<< p.get_coeff(1) << "*x" << " + " << p.get_coeff(0);
+	else if (p.get_degre() == 1) sortie << p.get_coeff(1) << "*x" << " + " << p.get_coeff(0);
+	else if (p.get_degre() == 0) sortie << p.get_coeff(0);
 	sortie << endl;
 	return sortie;
 }
 
 
 int main() {
-	Polynomial p;
-	p.set_degre(5);
 	vector <double> salut;
-	salut.push_back(3);
+	salut.push_back(1);
 	salut.push_back(2);
 	salut.push_back(3);
-	salut.push_back(2);
-	salut.push_back(3);
-	salut.push_back(2);
 	Polynomial p1(salut);
+	Polynomial p0;
+	cout << p0;//juste
+	cout << p1;//juste
+	vector <double> hello;
+	hello.push_back(1);
+	hello.push_back(2);
+	Polynomial p2(hello);
+	cout << p2;
+	
+	Polynomial p;
+	p = p0 + p1;//juste
 	cout << p;
-	cout << p1;
-	Polynomial p3;
-	Polynomial p4;
-	p3 = p + p1;
-	p4 = p1*p1;
-	cout << p3;
-	cout << p4;
+	p = p1 + p2;//juste
+	cout << p;
+	p = p0*p1;//juste
+	cout << p;
+	p = p1*p2;
+	cout << p;
+
 	return 0;
 }
