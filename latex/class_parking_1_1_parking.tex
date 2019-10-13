@@ -1,0 +1,59 @@
+\hypertarget{class_parking_1_1_parking}{}\doxysection{Parking\+::Parking Class Reference}
+\label{class_parking_1_1_parking}\index{Parking::Parking@{Parking::Parking}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parking_1_1_parking_a9ab34722820e1443c65f70fd971014bd}{Parking}} (size\+\_\+t max)
+\begin{DoxyCompactList}\small\item\em true si le parking est plein \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_1_1_parking_ab1c2bf8fcbc5409a226793cea3a7d383}{check\+\_\+in}} (\mbox{\hyperlink{class_parking_1_1_vehicule}{Vehicule}} $\ast$entree)
+\begin{DoxyCompactList}\small\item\em doit détruire toutes les places et mettre tous les vehicules à parking false \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_parking_1_1_parking_a20f188c315f79b274d5e3054dbf1ae6a}\label{class_parking_1_1_parking_a20f188c315f79b274d5e3054dbf1ae6a}} 
+void \mbox{\hyperlink{class_parking_1_1_parking_a20f188c315f79b274d5e3054dbf1ae6a}{check\+\_\+out}} (\mbox{\hyperlink{class_parking_1_1_vehicule}{Vehicule}} $\ast$sortie)
+\begin{DoxyCompactList}\small\item\em rentre le vehicule si possible dans le parking \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_parking_1_1_parking_ad43c38b5c894eb2dd6a4bb23d6776a06}\label{class_parking_1_1_parking_ad43c38b5c894eb2dd6a4bb23d6776a06}} 
+void \mbox{\hyperlink{class_parking_1_1_parking_ad43c38b5c894eb2dd6a4bb23d6776a06}{check\+\_\+out}} (size\+\_\+t i)
+\begin{DoxyCompactList}\small\item\em sort le vehicule \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_1_1_parking_a975413e214225dfa15c95db99ec222b4}{etat}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_parking_1_1_parking_a9ab34722820e1443c65f70fd971014bd}\label{class_parking_1_1_parking_a9ab34722820e1443c65f70fd971014bd}} 
+\index{Parking::Parking@{Parking::Parking}!Parking@{Parking}}
+\index{Parking@{Parking}!Parking::Parking@{Parking::Parking}}
+\doxysubsubsection{\texorpdfstring{Parking()}{Parking()}}
+{\footnotesize\ttfamily Parking\+::\+Parking\+::\+Parking (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+true si le parking est plein 
+
+parking vide avec max places
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_parking_1_1_parking_ab1c2bf8fcbc5409a226793cea3a7d383}\label{class_parking_1_1_parking_ab1c2bf8fcbc5409a226793cea3a7d383}} 
+\index{Parking::Parking@{Parking::Parking}!check\_in@{check\_in}}
+\index{check\_in@{check\_in}!Parking::Parking@{Parking::Parking}}
+\doxysubsubsection{\texorpdfstring{check\_in()}{check\_in()}}
+{\footnotesize\ttfamily void Parking\+::\+Parking\+::check\+\_\+in (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_parking_1_1_vehicule}{Vehicule}} $\ast$}]{entree }\end{DoxyParamCaption})}
+
+
+
+doit détruire toutes les places et mettre tous les vehicules à parking false 
+
+s\textquotesingle{}il reste au moins une place
+
+si c\textquotesingle{}est un camion
+
+comparer charge utile\mbox{\Hypertarget{class_parking_1_1_parking_a975413e214225dfa15c95db99ec222b4}\label{class_parking_1_1_parking_a975413e214225dfa15c95db99ec222b4}} 
+\index{Parking::Parking@{Parking::Parking}!etat@{etat}}
+\index{etat@{etat}!Parking::Parking@{Parking::Parking}}
+\doxysubsubsection{\texorpdfstring{etat()}{etat()}}
+{\footnotesize\ttfamily void Parking\+::\+Parking\+::etat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+libère la place std\+::cout $<$$<$ \char`\"{}nb places prises=\char`\"{} $<$$<$ j$<$$<$std\+::endl;
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+Downloads/\+E\+N\+G-\/209-\/exercice2/Parking.\+h\item 
+C\+:/\+Users/thoma/\+Downloads/\+E\+N\+G-\/209-\/exercice2/Parking.\+cpp\end{DoxyCompactItemize}
