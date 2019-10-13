@@ -1,4 +1,4 @@
-* Vehicule.cpp
+/** Vehicule.cpp
  *
  *  Created on: Oct 12, 2019
  *      Author: pcoo21
@@ -26,4 +26,4 @@ std::string Vehicule::get_plaque(){
 	return plaque;
 }
 
-} /* namespace Parking */
+} /*! namespace Parking */

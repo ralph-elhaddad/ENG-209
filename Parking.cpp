@@ -7,9 +7,9 @@ namespace Parking {
 
 void Parking::check_in(Vehicule* entree){
 	etat();
-	if (!etat_plein){//s'il reste au moins une place
-		if(entree->get_camion()){ //si c'est un camion
-			if(entree->get_charge_utile() > CHARGE_MAX){ //comparer charge utile
+	if (!etat_plein){//!s'il reste au moins une place
+		if(entree->get_camion()){ //!si c'est un camion
+			if(entree->get_charge_utile() > CHARGE_MAX){ //!comparer charge utile
 				std::cout << "Votre camion est trop lourd pour entrer!"
 						    << std::endl;
 				return;
@@ -81,7 +81,7 @@ void Parking::etat(){
 	size_t j(0);
 	for(size_t i(0); i<nb_place_max; ++i){
 		if (!(place[i] == nullptr)) ++j;
-		//std::cout << "nb places prises=" << j<<std::endl;
+		//!std::cout << "nb places prises=" << j<<std::endl;
 	}
 	nb_place_prise = j;
 	if (nb_place_prise == nb_place_max){
@@ -98,4 +98,4 @@ void Parking::etat(){
 }
 
 
-} /* namespace Parking */
+} /*! namespace Parking */

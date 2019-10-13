@@ -1,9 +1,9 @@
-/*
+/**
  * Voiture.h
  *
  *  Created on: Oct 12, 2019
  *      Author: pcoo21
- */
+**/
 
 #ifndef EXERCICE2_VOITURE_H_
 #define EXERCICE2_VOITURE_H_
@@ -18,6 +18,6 @@ class Voiture : public Vehicule{
 	public:
 		Voiture(std::string plaque_in): Vehicule(plaque_in) {}
 };
-} /* namespace Parking */
+} /*! namespace Parking */
 
-#endif /* EXERCICE2_VOITURE_H_ */
+#endif /*! EXERCICE2_VOITURE_H_ */

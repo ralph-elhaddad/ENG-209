@@ -13,4 +13,4 @@ double Camion::get_charge_utile(){
 	return charge_utile;
 }
 
-} /* namespace Parking */
+} /*! namespace Parking */

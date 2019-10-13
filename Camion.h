@@ -1,9 +1,9 @@
-/*
+/**
  * Camion.h
  *
  *  Created on: Oct 12, 2019
  *      Author: pcoo21
- */
+**/
 
 #ifndef EXERCICE2_CAMION_H_
 #define EXERCICE2_CAMION_H_
