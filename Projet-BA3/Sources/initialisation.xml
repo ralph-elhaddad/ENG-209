@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<landscape>
+
+   <serveur> 
+   		<nb_tick>12</nb_tick>
+   </serveur>
+   
+   <zone id="1">
+     <phenomene>
+     	<val_phen>12</val_phen>
+     	<born_sup>18.5</born_sup>
+     	<born_inf>30.5</born_inf>
+     </phenomene>
+     
+	 <controleur>
+	 	<val_satu>22</val_satu>
+	 	<val_control>18</val_control>
+	 </controleur>
+	 
+	 <etat>
+	 	<val_before>3</val_before>
+	 	<i_control>1</i_control>
+	 	<i_phen>2</i_phen>
+	 </etat>
+   </zone>
+
+   <!-- Ceci est un commentaire -->
+
+ </landscape>
